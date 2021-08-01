@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         button.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
         button.heightAnchor.constraint(equalToConstant: 42).isActive = true
         
-        button.dropView.dorpDownOptions = ["red", "blue", "purple", "green", "pink"]
+        button.dropView.dorpDownOptions = ["red", "blue", "purple", "green", "pink", "gray", "yellow", "brown"]
     }
 
 
@@ -89,8 +89,6 @@ class DropDownBtn: UIButton, dropDownProtocol {
             } else {
                 self.dropViewheight.constant = self.dropView.tableView.contentSize.height
             }
-            
-//            self.dropViewheight.constant = 300
             
             NSLayoutConstraint.activate([self.dropViewheight])
             
